@@ -1,0 +1,61 @@
+/* Style sheet */
+
+body {
+    width: 900px;
+    margin: auto;
+}
+
+#gallery {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgcontainer {
+    margin: 5px;
+    flex-basis: 290px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+img:hover {
+    opacity: 0.75;
+    border-radius: 0px;
+}
+
+footer p{
+    float: right;
+    padding-right: 3%;
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+nav h1 {
+    color: #ff5550;
+    font-size: 4rem;
+    text-align: center;
+}
+
+nav div {
+    width: 40%;
+    margin: auto;
+}
+
+nav div q {
+    text-align: center;
+}
+nav div p {
+    text-align: right;
+}
