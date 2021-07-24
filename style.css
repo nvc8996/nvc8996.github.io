@@ -1,6 +1,15 @@
 /* Style sheet */
-
 body {
+    background: #e7e7e7;
+    font-family: fantasy;
+}
+
+#plain {
+    width: 600px;
+    margin: auto;
+}
+
+#plain-gallery {
     width: 900px;
     margin: auto;
 }
@@ -42,8 +51,8 @@ header {
 }
 
 nav h1 {
-    color: #ff5550;
-    font-size: 4rem;
+    color: #184de0;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -57,4 +66,21 @@ nav div q {
 }
 nav div p {
     text-align: right;
+}
+
+a:link {
+    color: rgb(206, 50, 50);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(206, 50, 50);
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
+li {
+    color: #6d6d6d;
 }
