@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WAD ITMO VNIT 2021</title>
+</head>
+<body>
+    <div id="plain">
+        <header>
+            <nav>
+                <h1>WAD ITMO VNIT 2021</h1>
+                <div>
+                    <center>
+                        <q>
+                            <i>
+                                The <strong>true power</strong> of us human being is that we can change ourselves on our own
+                            </i>
+                        </q>
+                    </center>
+                    <p><strong>Saitama</strong></p>
+                </div>
+            </nav>
+        </header>
+        <hr>
+        <br>
+        
+        <h1>Deployment practice guide (Free version)</h1>
+        <br>
+        <h3>Cài đặt máy ảo Ubuntu</h3>
+            <ul>
+                <li>Tải file iso ubuntu desktop (dễ làm quen hơn ubuntu server) tại <a href="https://ubuntu.com/download/desktop">đây.</a></li>
+                <li>Cài đặt máy ảo với VirtualBox (hoặc VMWare)</li>
+                <li>Máy ảo nên có network card kiểu bridged adapter (để kết nối với máy chính), có thể dùng thêm NAT để kết nối internet nếu bridged adapter không hỗ trợ.</li>
+                <li>Kiểm tra ssh server bằng lệnh: <i>service ssh status</i></li>
+                <li>Nếu chưa có ssh, tiến hành cài đặt bằng lệnh: <i>sudo apt install openssh-server</i></li>
+                <li>Xác nhận ssh hoạt động bằng lệnh kiểm tra <i>service ssh status</i> hoặc <i>systemctl status ssh</i></li>
+                <li>Kiểm tra địa chỉ ip tương ứng với bridged adapter với lệnh: <i>ip addr</i></li>
+            </ul>
+        <h3>Truy cập máy ảo thông qua ssh</h3>
+        <h5>Với máy linux (unix)</h5>
+            <ul>
+                <li>Mở terminal</li>
+                <li>Kết nối ssh bằng lệnh: <i>ssh "username"@"IP của máy ubuntu"</i> (VD: ssh root@192.168.56.65)</li>
+                <li>Nhập yes</li>
+                <li>Nhập mật khẩu</li>
+            </ul>
+        <h5>Với máy Windows</h5>
+            <ul>
+                <li>Tải Putty</li>
+                <li>Kết nối ssh bằng Putty đến địa chỉ IP của máy ubuntu, cổng (port) 22</li>
+                <li>Nhập username và mật khẩu</li>
+            </ul>
+
+        <h3>Cài đặt nginx</h3>
+            <ul>
+                <li>Cài đặt nginx với lệnh: <i>sudo apt install nginx</i></li>
+                <li>Kiểm tra nginx service với lệnh: <i>service nginx status</i> hoặc <i>systemctl status nginx</i></li>
+                <li>Mở trình duyệt trên máy chính và truy cập vào địa chỉ IP của máy ubuntu để kiểm tra hoạt động của nginx</li>
+            </ul>
+        
+        <h3>Play</h3>
+            <p>Như vậy là bạn đã có máy chủ ảo Ubuntu với nginx và kết nối đến nó thông qua ssh. Bây giờ bạn có thể thử cài đặt nginx và deploy ứng dụng web của bạn trên server này rồi! Good luck, have fun!</p>
+        <br>
+        <br>
+        <hr>
+        <footer>
+            <p>Copyright @NVC2021</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
